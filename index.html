@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Library Membership Form</h1>
+        <label for="thname">Thai Name *</label><br>
+        <input type="text" id="fthname" placeholder="ชื่อ" required>
+        <input type="text" id="lthname" placeholder="นามสกุล" required>
+        <br><br>
+        <label for="enname">Full Name *</label><br>
+        <div class="Fullname">
+            <input type="text" id="Firstname" placeholder="Firstname" required>
+            <input type="text" id="Lastname" placeholder="Lastname" required>
+        <br><br>
+        </div>
+        
+        <label for="Gender">Gender  </label><br><br>
+        <select id="gender" name="gender">
+            <option value="other">Other</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Nonbinary">Non-binary</option>
+        </select>
+        <br><br>
+        <label for="studentid">Student ID * </label>
+        <input type="text" id="studentid" required>
+        <br><br>
+        <label for="Faculty">Faculty * </label><br>
+        <input type="text" id="faculty" required>
+        <br><br>
+        
+        <label for="email">Email</label><br>
+        <input type="email" id="email" required>
+        <br><br>
+        <label for="date">วัน-เดือน-ปี เกิด *</label>
+        <br><br>
+        <input type="date" id="date" name="date" value="date" required="">
+        <br><br>
+        <label for="books">ประเภทของหนังสือที่สนใจ *</label>
+        <br><br>
+        <select name="books" id="books" required="">
+            <option value="">Select</option>
+            <option value="Historical fiction">Historical fiction</option>
+            <option value="Science fiction">Science fiction</option>
+            <option value="Horror">Horror</option>
+            <option value="Tragedy">Tragedy</option>
+            <option value="Romance">Romance</option>
+            <option value="Western">Western</option>
+            <option value="Literary fiction">Literary fiction</option>
+        </select>
+        <br><br>
+        <label for="normally">ปกติเข้าห้องสมุดบ่อยไหม</label>
+        <br><br>
+        <select name="normal" id="normally">
+                <option value="Never">ไม่เคยเข้ามาก่อนเลย</option>
+                <option value="Sometime">1-3 ครั้งต่อเดือน</option>
+                <option value="often ">4-6 ครั้งต่อเดือน</option>
+                <option value="Always">มากกว่า 6 ครั้งต่อเดือน</option>
+        </select>
+        <br><br>
+        <label for="books">ต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่ </label>
+        <br><br>
+        <input type="radio" id="Yes" value="Yes">
+        <label for="Yes">Yes</label>
+        <input type="radio" id="No" value="No">
+        <label for="No">No</label>
+        <br><br>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+</body>
+</html>
